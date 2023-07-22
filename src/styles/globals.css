@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("./Hamburger.css");
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-rgb: 255, 255, 255;
+  --foreground-rgb: black;
+  --background-rgb: white;
   --true-purple: #6a0dad;
   --thistle: #d8bfd8;
   --plum: #dda0dd;
@@ -12,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 0, 0, 0;
-    --background-rgb: 255, 255, 255;
+    --foreground-rgb: black;
+    --background-rgb: white;
     --true-purple: #6a0dad;
     --thistle: #d8bfd8;
     --plum: #dda0dd;
@@ -36,11 +38,11 @@ body {
 
 /* NAVBAR */
 .active_navbar_link:hover {
-  border-top: 3px solid transparent;
-  border-bottom: 3px solid black !important;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid black !important;
 }
 
 .disable_navbar_link {
-  border-top: 3px solid transparent;
-  border-bottom: 3px solid transparent;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
 }
