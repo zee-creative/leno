@@ -84,12 +84,14 @@ export default function Navbar() {
               exit={{ opacity: 0, y: -100 }}
             >
               <div
-                data-dropdown
                 className={`${
                   !sideActive && "hidden"
                 } flex justify-center flex-col items-center absolute w-screen top-[70px] left-0 bg-[var(--background-rgb)]`}
               >
-                <ul className="flex w-full px-4 flex-col justify-center items-center py-5">
+                <ul
+                  data-dropdown
+                  className="flex w-full px-4 flex-col justify-center items-center py-5"
+                >
                   {linksData?.map((e, i) => {
                     return (
                       <Link
