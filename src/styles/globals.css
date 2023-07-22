@@ -4,24 +4,43 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-rgb: 255, 255, 255;
+  --true-purple: #6a0dad;
+  --thistle: #d8bfd8;
+  --plum: #dda0dd;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 0, 0, 0;
+    --background-rgb: 255, 255, 255;
+    --true-purple: #6a0dad;
+    --thistle: #d8bfd8;
+    --plum: #dda0dd;
   }
+}
+
+*,
+p,
+ul li {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+/* NAVBAR */
+.active_navbar_link:hover {
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid black !important;
+}
+
+.disable_navbar_link {
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
 }
