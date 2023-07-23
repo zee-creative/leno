@@ -14,11 +14,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: black;
-    --background-rgb: white;
+    --foreground-rgb: white;
+    --background-rgb: #202020;
     --true-purple: #6a0dad;
     --thistle: #d8bfd8;
     --plum: #dda0dd;
+  }
+  .navbar_shadow {
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 2px 8px;
   }
 }
 
@@ -32,8 +35,8 @@ ul li {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  color: var(--foreground-rgb);
+  background: var(--background-rgb);
 }
 
 /* NAVBAR */
@@ -45,4 +48,8 @@ body {
 .disable_navbar_link {
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
+}
+
+.navbar_shadow {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }

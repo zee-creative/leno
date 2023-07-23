@@ -6,9 +6,9 @@ import Head from "next/head";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-    <Head>
-      <title>Leno Creatives</title>
-    </Head>
+      <Head>
+        <title>Leno Creatives</title>
+      </Head>
       <Navbar />
       <Component {...pageProps} />
     </>
