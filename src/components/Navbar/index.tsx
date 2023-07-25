@@ -9,21 +9,21 @@ const poppins = Poppins({ weight: "500", subsets: ["latin"] });
 export default function Navbar() {
   const [sideActive, setSideActive] = useState<boolean>(false);
 
-  // try {
-  //   window?.addEventListener("blur", () => setSideActive(false));
-  //   document?.addEventListener("blur", () => setSideActive(false));
-  //   document?.addEventListener("scroll", () => setSideActive(false));
+  try {
+    window?.addEventListener("blur", () => setSideActive(false));
+    document?.addEventListener("blur", () => setSideActive(false));
+    document?.addEventListener("scroll", () => setSideActive(false));
 
-  //   document?.addEventListener("click", (e: Event) => {
-  //     if (
-  //       (e.target as Element)?.closest("[data-dropdown]") != null ||
-  //       (e.target as Element)?.closest("[data-dropdown-button]") != null
-  //     )
-  //       return;
+    document?.addEventListener("click", (e: Event) => {
+      if (
+        (e.target as Element)?.closest("[data-dropdown]") != null ||
+        (e.target as Element)?.closest("[data-dropdown-button]") != null
+      )
+        return;
 
-  //     setSideActive(false);
-  //   });
-  // } catch {}
+      setSideActive(false);
+    });
+  } catch {}
 
   return (
     <div className={poppins.className}>
