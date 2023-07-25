@@ -6,7 +6,7 @@ const poppins = Poppins({ weight: ["500", "400"], subsets: ["latin"] });
 export default function Home() {
   return (
     <div
-      className={`${poppins.className} flex lg:space-y-0 space-x-5 space-y-3 mt-2 justify-center lg:flex-row flex-col items-start py-16 px-3 lg:px-10`}
+      className={`${poppins.className} flex lg:space-y-0 lg:space-x-5 space-y-3 mt-2 justify-center lg:flex-row flex-col items-start py-16 px-3 lg:px-10`}
     >
       <div className="lg:w-1/2 flex md:w-full justify-center items-start">
         <Image
