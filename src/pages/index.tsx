@@ -27,7 +27,7 @@ export default function Home() {
         <p className="lg:text-xl">
           Design agency that turns your streaming vision into a standout brand.
           Imagine you're the best Twitch streamer, and now see yourself as a
-          famous brand!! That’s what we do for you.
+          famous brand!! That&lsquo;s what we do for you.
         </p>
         <div className="flex lg:flex-row flex-col lg:py-0 py-3 justify-start items-start space-x-3">
           <button className="button-49 px-7 py-2" role="button">
