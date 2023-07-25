@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url("./Hamburger.css");
+@import url("./Buttons.css");
 
 :root {
   --foreground-rgb: black;

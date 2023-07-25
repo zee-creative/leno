@@ -4,27 +4,26 @@ import { useState } from "react";
 import Mobile from "@/components/Navbar/Mobile";
 import Data from "@/components/Navbar/Data";
 import { Poppins } from "next/font/google";
-
 const poppins = Poppins({ weight: "500", subsets: ["latin"] });
 
 export default function Navbar() {
   const [sideActive, setSideActive] = useState<boolean>(false);
 
-  try {
-    window?.addEventListener("blur", () => setSideActive(false));
-    document?.addEventListener("blur", () => setSideActive(false));
-    document?.addEventListener("scroll", () => setSideActive(false));
+  // try {
+  //   window?.addEventListener("blur", () => setSideActive(false));
+  //   document?.addEventListener("blur", () => setSideActive(false));
+  //   document?.addEventListener("scroll", () => setSideActive(false));
 
-    document?.addEventListener("click", (e: Event) => {
-      if (
-        (e.target as Element)?.closest("[data-dropdown]") != null ||
-        (e.target as Element)?.closest("[data-dropdown-button]") != null
-      )
-        return;
+  //   document?.addEventListener("click", (e: Event) => {
+  //     if (
+  //       (e.target as Element)?.closest("[data-dropdown]") != null ||
+  //       (e.target as Element)?.closest("[data-dropdown-button]") != null
+  //     )
+  //       return;
 
-      setSideActive(false);
-    });
-  } catch {}
+  //     setSideActive(false);
+  //   });
+  // } catch {}
 
   return (
     <div className={poppins.className}>
@@ -61,9 +60,12 @@ export default function Navbar() {
           </div>
 
           <div className="hidden lg:flex justify-center items-center space-x-8">
-            <button className="dark:text-[var(--foreground-rgb)] bg-[var(--true-purple)] tracking-tighter text-[var(--background-rgb)] px-6 py-1 rounded-full">
-              Get the design
+            <button className="button-64 rounded-full" role="button">
+              <span className="text px-7 text-sm py-1 font-extrabold rounded-full">
+                Get The Design
+              </span>
             </button>
+
             <ul className="flex justify-center items-center space-x-5">
               {Data?.map((e, i) => {
                 return (
