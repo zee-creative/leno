@@ -40,6 +40,14 @@ export default function Home() {
             <span className="relative -bottom-2">Talk To Us</span>
           </button>
         </div>
+        <div className="lg:py-4">
+        <Image
+          src="/cert.png"
+          width={300}
+          height={200}
+          alt="Picture of the author"
+        />
+        </div>
       </div>
     </div>
   );
