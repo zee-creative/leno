@@ -42,7 +42,7 @@ body {
 /* NAVBAR */
 .active_navbar_link:hover {
   border-top: 2px solid transparent;
-  border-bottom: 2px solid black !important;
+  border-bottom: 2px solid black;
 }
 
 .disable_navbar_link {

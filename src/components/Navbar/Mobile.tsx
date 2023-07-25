@@ -22,7 +22,7 @@ const Mobile = ({ sideActive }: { sideActive: boolean }) => {
                 return (
                   <Link
                     key={i}
-                    className="w-full py-2 pl-5 disable_navbar_link active_navbar_link"
+                    className="w-full py-2 pl-5 disable_navbar_link active_navbar_link dark:hover:border-b-[var(--foreground-rgb)] dar:hover:border-b-[2px]"
                     href={e?.link}
                   >
                     <li className="w-full text-left">{e?.name}</li>
@@ -31,23 +31,23 @@ const Mobile = ({ sideActive }: { sideActive: boolean }) => {
               })}
             </ul>
             <div className="flex justify-center items-center w-full px-7 mb-8">
-              <button className="dark:text-white tracking-tighter [word-spacing:-3px] bg-[var(--true-purple)] text-[var(--background-rgb)] w-full px-6 py-1 rounded-full">
+              <button className="dark:text-[var(--foreground-rgb)] tracking-tighter bg-[var(--true-purple)] text-[var(--background-rgb)] w-full px-6 py-1 rounded-full">
                 Get the design
               </button>
             </div>
             <div className="flex w-full justify-center items-center space-x-5 pb-5">
-              <button className="px-2 py-2">
+              <a href="/" target="_blank" className="px-2 py-2">
                 <BsTwitter size={20} color="#00acee" />
-              </button>
-              <button className="px-2 py-2">
+              </a>
+              <a href="/" target="_blank" className="px-2 py-2">
                 <BsLinkedin size={20} color="#0077b5" />
-              </button>
-              <button className="px-2 py-2">
+              </a>
+              <a href="/" target="_blank" className="px-2 py-2">
                 <BsFacebook size={20} color="#3b5998" />
-              </button>
+              </a>
             </div>
             {/* */}
-            <div className="w-full h-screen overflow-hidden top-14 left-0 bg-[#000] dark:bg-white opacity-25"></div>
+            <div className="w-full h-screen overflow-hidden top-14 left-0 bg-[var(--foreground-rgb)] dark:bg-[var(--foreground-rgb)] opacity-25"></div>
           </div>
         </motion.div>
       )}
